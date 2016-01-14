@@ -17,7 +17,7 @@ let request = oauth2swift.manager()
 ```
 
 ### NSMutableRequest / URLRequestConvertible
-On any `NSMutableRequest` use one of the `addOAuthHeader` to add `Authorization` HTTP header.
+On any `NSMutableRequest` use `addOAuthHeader` or `addOAuthHeaderWithCredential` to add `Authorization` HTTP header.
 
 You can for instance use it in your `URLRequestConvertible` object before returning the `NSMutableURLRequest`.
 

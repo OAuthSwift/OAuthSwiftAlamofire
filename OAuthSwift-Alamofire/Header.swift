@@ -12,23 +12,15 @@ import OAuthSwift
 
 public extension NSMutableURLRequest {
 
-    public func addOAuthHeader(credential: OAuthSwiftCredential, parameters: [String: AnyObject] = [:]) {
-        let headers = credential.makeHeaders(self.URL!, method: OAuthSwiftHTTPRequest.Method(rawValue: self.HTTPMethod) ?? .GET, parameters: parameters)
+    public func addOAuthHeaderWithCredential(credential: OAuthSwiftCredential, parameters: [String: AnyObject] = [:]) {
+        let headers = credential.makeHeaders(self.URL ?? NSURL(), method: OAuthSwiftHTTPRequest.Method(rawValue: self.HTTPMethod) ?? .GET, parameters: parameters)
         for (field, value) in headers {
             self.setValue(value, forHTTPHeaderField: field)
         }
     }
 
-    public func addOAuthHeader(oauth: OAuth1Swift, parameters: [String: AnyObject] = [:]) {
-        self.addOAuthHeader(oauth.client.credential, parameters: parameters)
-    }
-
-    public func addOAuthHeader(oauth: OAuth2Swift) {
-        // dummy parameters, oauth2 doesn't need it
-        let headers = oauth.client.credential.makeHeaders(NSURL(), method: .GET, parameters: [:])
-        for (field, value) in headers {
-            self.setValue(value, forHTTPHeaderField: field)
-        }
+    public func addOAuthHeader(oauth: OAuthSwift, parameters: [String: AnyObject] = [:]) {
+        self.addOAuthHeaderWithCredential(oauth.client.credential, parameters: parameters)
     }
 
 }
