@@ -31,7 +31,7 @@ extension Manager {
 
     public func request(URLRequest: URLRequestConvertible, credential: OAuthSwiftCredential) -> Request {
         let request = URLRequest.URLRequest
-        request.addOAuthHeader(credential)
+        request.addOAuthHeaderWithCredential(credential)
         let requestConvertible: URLRequestConvertible = request
         return self.request(requestConvertible)
     }
