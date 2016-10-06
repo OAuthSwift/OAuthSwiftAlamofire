@@ -7,54 +7,78 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		105BC276DBF4C6ABDC789285 /* Pods_OAuthSwift_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52E07E60BAD6D1DC9D5CA088 /* Pods_OAuthSwift_Alamofire.framework */; };
-		5BB0A9C52EF165B30852B8C3 /* Pods_OAuthSwift_AlamofireTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B4C08AD648EC660B8E1E9E /* Pods_OAuthSwift_AlamofireTVOS.framework */; };
-		C400DA831C3E033F0002A995 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA821C3E033F0002A995 /* Method.swift */; };
-		C400DA851C3E08FF0002A995 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA841C3E08FF0002A995 /* Header.swift */; };
+		33B67B4675FE1E5945BC40FA /* Pods_OAuthSwiftAlamofireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A08389A4A0433C450B95AA5E /* Pods_OAuthSwiftAlamofireTests.framework */; };
+		429AF24EA9ABCA0E7CA4903B /* Pods_OAuthSwift_AlamofireTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BA44DFAB1E97727408CF68 /* Pods_OAuthSwift_AlamofireTVOS.framework */; };
+		8662B8B3F0FF644843B24CA0 /* Pods_OAuthSwift_Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AA61A6ABAC7F27162497FD8 /* Pods_OAuthSwift_Alamofire.framework */; };
+		C400DA831C3E033F0002A995 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA821C3E033F0002A995 /* HTTPMethod.swift */; };
+		C40C96E21DA6498000197628 /* OAuthSwiftAlamofireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40C96E11DA6498000197628 /* OAuthSwiftAlamofireTests.swift */; };
+		C40C96E41DA6498000197628 /* OAuthSwiftAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41CFE0D1C4806C000569B80 /* OAuthSwiftAlamofire.framework */; };
 		C41CFE031C4806AA00569B80 /* OAuthSwift-AlamofireTVOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C41CFE021C4806AA00569B80 /* OAuthSwift-AlamofireTVOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C41CFE101C4806C000569B80 /* OAuthSwift-AlamofireOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = C41CFE0F1C4806C000569B80 /* OAuthSwift-AlamofireOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C41CFE151C4806CB00569B80 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA841C3E08FF0002A995 /* Header.swift */; };
-		C41CFE161C4806CB00569B80 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA821C3E033F0002A995 /* Method.swift */; };
-		C41CFE171C4806CB00569B80 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA841C3E08FF0002A995 /* Header.swift */; };
-		C41CFE181C4806CB00569B80 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA821C3E033F0002A995 /* Method.swift */; };
+		C41CFE161C4806CB00569B80 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA821C3E033F0002A995 /* HTTPMethod.swift */; };
+		C41CFE181C4806CB00569B80 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C400DA821C3E033F0002A995 /* HTTPMethod.swift */; };
+		C48204631DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48204621DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift */; };
+		C48204641DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48204621DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift */; };
+		C48204651DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48204621DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift */; };
 		C4D7F9431BB7585900A6D40E /* OAuthSwift-Alamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = C4D7F9421BB7585900A6D40E /* OAuthSwift-Alamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4EA64D71C480AEA00E299C5 /* Manager+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA64D61C480AEA00E299C5 /* Manager+OAuthSwift.swift */; };
-		C4EA64D81C480AEA00E299C5 /* Manager+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA64D61C480AEA00E299C5 /* Manager+OAuthSwift.swift */; };
-		C4EA64D91C480AEA00E299C5 /* Manager+OAuthSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EA64D61C480AEA00E299C5 /* Manager+OAuthSwift.swift */; };
-		D1F51E73098F488AA9D73CF0 /* Pods_OAuthSwift_AlamofireOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BBFFE09E849292D0BB92F2 /* Pods_OAuthSwift_AlamofireOSX.framework */; };
+		CA103DD1DB4BB2A308C1FD3C /* Pods_OAuthSwift_AlamofireOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE85CA19C5FEFB904FCABF59 /* Pods_OAuthSwift_AlamofireOSX.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C40C96E51DA6498000197628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4D7F9361BB7585900A6D40E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C41CFE0C1C4806C000569B80;
+			remoteInfo = "OAuthSwift-AlamofireOSX";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0061E6BB8E842DE66FC598C5 /* Pods-OAuthSwift-AlamofireOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-AlamofireOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-AlamofireOSX/Pods-OAuthSwift-AlamofireOSX.release.xcconfig"; sourceTree = "<group>"; };
-		0537178882480248D87C2B9C /* Pods-OAuthSwift-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-Alamofire.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-Alamofire/Pods-OAuthSwift-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
-		52E07E60BAD6D1DC9D5CA088 /* Pods_OAuthSwift_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwift_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5674FE45257849C6DBAB7A1B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FE7E77AB9777674F495DDD8 /* Pods-OAuthSwift-AlamofireTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-AlamofireTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-AlamofireTVOS/Pods-OAuthSwift-AlamofireTVOS.release.xcconfig"; sourceTree = "<group>"; };
-		8D8A6AB40A34CA99252BA454 /* Pods-OAuthSwift-AlamofireOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-AlamofireOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-AlamofireOSX/Pods-OAuthSwift-AlamofireOSX.debug.xcconfig"; sourceTree = "<group>"; };
-		C400DA821C3E033F0002A995 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
-		C400DA841C3E08FF0002A995 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		5DE87F4E3CA92C39F0CCB9F1 /* Pods-OAuthSwift-AlamofireOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-AlamofireOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-AlamofireOSX/Pods-OAuthSwift-AlamofireOSX.release.xcconfig"; sourceTree = "<group>"; };
+		650859DE72500FCC7357BE48 /* Pods-OAuthSwift-Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-Alamofire.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-Alamofire/Pods-OAuthSwift-Alamofire.release.xcconfig"; sourceTree = "<group>"; };
+		6C4B4C0B17BF04E9D930B28E /* Pods-OAuthSwift-AlamofireOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-AlamofireOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-AlamofireOSX/Pods-OAuthSwift-AlamofireOSX.debug.xcconfig"; sourceTree = "<group>"; };
+		6EBB44C27892E32399C60CB1 /* Pods-OAuthSwift-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-Alamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-Alamofire/Pods-OAuthSwift-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
+		8B5378333E0446532BFBC0CC /* Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-AlamofireTVOS/Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig"; sourceTree = "<group>"; };
+		9AA61A6ABAC7F27162497FD8 /* Pods_OAuthSwift_Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwift_Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00C118604D4C8A80FE1D215 /* Pods-OAuthSwift-AlamofireTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-AlamofireTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-AlamofireTVOS/Pods-OAuthSwift-AlamofireTVOS.release.xcconfig"; sourceTree = "<group>"; };
+		A08389A4A0433C450B95AA5E /* Pods_OAuthSwiftAlamofireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwiftAlamofireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1BA44DFAB1E97727408CF68 /* Pods_OAuthSwift_AlamofireTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwift_AlamofireTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C400DA821C3E033F0002A995 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		C40C96DF1DA6498000197628 /* OAuthSwiftAlamofireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OAuthSwiftAlamofireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40C96E11DA6498000197628 /* OAuthSwiftAlamofireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthSwiftAlamofireTests.swift; sourceTree = "<group>"; };
+		C40C96E31DA6498000197628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C41CFE001C4806AA00569B80 /* OAuthSwiftAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwiftAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41CFE021C4806AA00569B80 /* OAuthSwift-AlamofireTVOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-AlamofireTVOS.h"; sourceTree = "<group>"; };
 		C41CFE041C4806AA00569B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C41CFE0D1C4806C000569B80 /* OAuthSwiftAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwiftAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C41CFE0F1C4806C000569B80 /* OAuthSwift-AlamofireOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-AlamofireOSX.h"; sourceTree = "<group>"; };
 		C41CFE111C4806C000569B80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48204621DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthSwiftRequestAdapter.swift; sourceTree = "<group>"; };
 		C4D7F93F1BB7585900A6D40E /* OAuthSwiftAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwiftAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D7F9421BB7585900A6D40E /* OAuthSwift-Alamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-Alamofire.h"; sourceTree = "<group>"; };
 		C4D7F9441BB7585900A6D40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C4EA64D61C480AEA00E299C5 /* Manager+OAuthSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Manager+OAuthSwift.swift"; sourceTree = "<group>"; };
-		C9BBFFE09E849292D0BB92F2 /* Pods_OAuthSwift_AlamofireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwift_AlamofireOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5B4C08AD648EC660B8E1E9E /* Pods_OAuthSwift_AlamofireTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwift_AlamofireTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D790BF109AAA326F4040706B /* Pods-OAuthSwift-Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-Alamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-Alamofire/Pods-OAuthSwift-Alamofire.debug.xcconfig"; sourceTree = "<group>"; };
-		F13B9DCDF2E0D853B0D50C9B /* Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwift-AlamofireTVOS/Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CE85CA19C5FEFB904FCABF59 /* Pods_OAuthSwift_AlamofireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OAuthSwift_AlamofireOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF85E9F7199417819DA331D /* Pods-OAuthSwiftAlamofireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftAlamofireTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftAlamofireTests/Pods-OAuthSwiftAlamofireTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED3E57247DBE681B087D9D93 /* Pods-OAuthSwiftAlamofireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OAuthSwiftAlamofireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OAuthSwiftAlamofireTests/Pods-OAuthSwiftAlamofireTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C40C96DC1DA6498000197628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40C96E41DA6498000197628 /* OAuthSwiftAlamofire.framework in Frameworks */,
+				33B67B4675FE1E5945BC40FA /* Pods_OAuthSwiftAlamofireTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C41CFDFC1C4806AA00569B80 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB0A9C52EF165B30852B8C3 /* Pods_OAuthSwift_AlamofireTVOS.framework in Frameworks */,
+				429AF24EA9ABCA0E7CA4903B /* Pods_OAuthSwift_AlamofireTVOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1F51E73098F488AA9D73CF0 /* Pods_OAuthSwift_AlamofireOSX.framework in Frameworks */,
+				CA103DD1DB4BB2A308C1FD3C /* Pods_OAuthSwift_AlamofireOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,35 +94,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				105BC276DBF4C6ABDC789285 /* Pods_OAuthSwift_Alamofire.framework in Frameworks */,
+				8662B8B3F0FF644843B24CA0 /* Pods_OAuthSwift_Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24FF00580953CB6A74669DF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB44C27892E32399C60CB1 /* Pods-OAuthSwift-Alamofire.debug.xcconfig */,
+				650859DE72500FCC7357BE48 /* Pods-OAuthSwift-Alamofire.release.xcconfig */,
+				6C4B4C0B17BF04E9D930B28E /* Pods-OAuthSwift-AlamofireOSX.debug.xcconfig */,
+				5DE87F4E3CA92C39F0CCB9F1 /* Pods-OAuthSwift-AlamofireOSX.release.xcconfig */,
+				8B5378333E0446532BFBC0CC /* Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig */,
+				A00C118604D4C8A80FE1D215 /* Pods-OAuthSwift-AlamofireTVOS.release.xcconfig */,
+				ED3E57247DBE681B087D9D93 /* Pods-OAuthSwiftAlamofireTests.debug.xcconfig */,
+				DFF85E9F7199417819DA331D /* Pods-OAuthSwiftAlamofireTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		475FDAE2A93D6E9CA2D1E631 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				52E07E60BAD6D1DC9D5CA088 /* Pods_OAuthSwift_Alamofire.framework */,
 				5674FE45257849C6DBAB7A1B /* Pods.framework */,
-				C9BBFFE09E849292D0BB92F2 /* Pods_OAuthSwift_AlamofireOSX.framework */,
-				D5B4C08AD648EC660B8E1E9E /* Pods_OAuthSwift_AlamofireTVOS.framework */,
+				9AA61A6ABAC7F27162497FD8 /* Pods_OAuthSwift_Alamofire.framework */,
+				CE85CA19C5FEFB904FCABF59 /* Pods_OAuthSwift_AlamofireOSX.framework */,
+				B1BA44DFAB1E97727408CF68 /* Pods_OAuthSwift_AlamofireTVOS.framework */,
+				A08389A4A0433C450B95AA5E /* Pods_OAuthSwiftAlamofireTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		92EEDC4DF8A42F504168D865 /* Pods */ = {
+		C40C96DA1DA6495600197628 /* Xcode */ = {
 			isa = PBXGroup;
 			children = (
-				D790BF109AAA326F4040706B /* Pods-OAuthSwift-Alamofire.debug.xcconfig */,
-				0537178882480248D87C2B9C /* Pods-OAuthSwift-Alamofire.release.xcconfig */,
-				8D8A6AB40A34CA99252BA454 /* Pods-OAuthSwift-AlamofireOSX.debug.xcconfig */,
-				0061E6BB8E842DE66FC598C5 /* Pods-OAuthSwift-AlamofireOSX.release.xcconfig */,
-				F13B9DCDF2E0D853B0D50C9B /* Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig */,
-				6FE7E77AB9777674F495DDD8 /* Pods-OAuthSwift-AlamofireTVOS.release.xcconfig */,
+				C4D7F9411BB7585900A6D40E /* OAuthSwift-Alamofire */,
+				C41CFE011C4806AA00569B80 /* OAuthSwift-AlamofireTVOS */,
+				C41CFE0E1C4806C000569B80 /* OAuthSwift-AlamofireOSX */,
 			);
-			name = Pods;
+			name = Xcode;
+			sourceTree = "<group>";
+		};
+		C40C96E01DA6498000197628 /* OAuthSwiftAlamofireTests */ = {
+			isa = PBXGroup;
+			children = (
+				C40C96E11DA6498000197628 /* OAuthSwiftAlamofireTests.swift */,
+				C40C96E31DA6498000197628 /* Info.plist */,
+			);
+			path = OAuthSwiftAlamofireTests;
 			sourceTree = "<group>";
 		};
 		C41CFE011C4806AA00569B80 /* OAuthSwift-AlamofireTVOS */ = {
@@ -119,15 +165,24 @@
 			path = "OAuthSwift-AlamofireOSX";
 			sourceTree = "<group>";
 		};
+		C48204611DA532E300A69572 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C48204621DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift */,
+				C400DA821C3E033F0002A995 /* HTTPMethod.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		C4D7F9351BB7585900A6D40E = {
 			isa = PBXGroup;
 			children = (
-				C4D7F9411BB7585900A6D40E /* OAuthSwift-Alamofire */,
-				C41CFE011C4806AA00569B80 /* OAuthSwift-AlamofireTVOS */,
-				C41CFE0E1C4806C000569B80 /* OAuthSwift-AlamofireOSX */,
+				C48204611DA532E300A69572 /* Sources */,
+				C40C96DA1DA6495600197628 /* Xcode */,
+				C40C96E01DA6498000197628 /* OAuthSwiftAlamofireTests */,
 				C4D7F9401BB7585900A6D40E /* Products */,
-				92EEDC4DF8A42F504168D865 /* Pods */,
 				475FDAE2A93D6E9CA2D1E631 /* Frameworks */,
+				24FF00580953CB6A74669DF1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +192,7 @@
 				C4D7F93F1BB7585900A6D40E /* OAuthSwiftAlamofire.framework */,
 				C41CFE001C4806AA00569B80 /* OAuthSwiftAlamofire.framework */,
 				C41CFE0D1C4806C000569B80 /* OAuthSwiftAlamofire.framework */,
+				C40C96DF1DA6498000197628 /* OAuthSwiftAlamofireTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,9 +202,6 @@
 			children = (
 				C4D7F9421BB7585900A6D40E /* OAuthSwift-Alamofire.h */,
 				C4D7F9441BB7585900A6D40E /* Info.plist */,
-				C400DA841C3E08FF0002A995 /* Header.swift */,
-				C400DA821C3E033F0002A995 /* Method.swift */,
-				C4EA64D61C480AEA00E299C5 /* Manager+OAuthSwift.swift */,
 			);
 			path = "OAuthSwift-Alamofire";
 			sourceTree = "<group>";
@@ -183,62 +236,89 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C41CFDFF1C4806AA00569B80 /* OAuthSwift-AlamofireTVOS */ = {
+		C40C96DE1DA6498000197628 /* OAuthSwiftAlamofireTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C41CFE051C4806AA00569B80 /* Build configuration list for PBXNativeTarget "OAuthSwift-AlamofireTVOS" */;
+			buildConfigurationList = C40C96E71DA6498000197628 /* Build configuration list for PBXNativeTarget "OAuthSwiftAlamofireTests" */;
 			buildPhases = (
-				D1DEB4E6A1087B48422A5EC4 /* Check Pods Manifest.lock */,
+				00BBBA94B2B46A332C7605C0 /* 📦 Check Pods Manifest.lock */,
+				C40C96DB1DA6498000197628 /* Sources */,
+				C40C96DC1DA6498000197628 /* Frameworks */,
+				C40C96DD1DA6498000197628 /* Resources */,
+				2BDC3A795A39B0505E74C16B /* 📦 Embed Pods Frameworks */,
+				7E09478E77A579E796B5983B /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C40C96E61DA6498000197628 /* PBXTargetDependency */,
+			);
+			name = OAuthSwiftAlamofireTests;
+			productName = OAuthSwiftAlamofireTests;
+			productReference = C40C96DF1DA6498000197628 /* OAuthSwiftAlamofireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C41CFDFF1C4806AA00569B80 /* OAuthSwiftAlamofireTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C41CFE051C4806AA00569B80 /* Build configuration list for PBXNativeTarget "OAuthSwiftAlamofireTVOS" */;
+			buildPhases = (
+				5DB4A7C7957EF6294D8C395F /* 📦 Check Pods Manifest.lock */,
+				22CDF7FB01D9413EF1DA417A /* [CP] Check Pods Manifest.lock */,
 				C41CFDFB1C4806AA00569B80 /* Sources */,
 				C41CFDFC1C4806AA00569B80 /* Frameworks */,
 				C41CFDFD1C4806AA00569B80 /* Headers */,
 				C41CFDFE1C4806AA00569B80 /* Resources */,
-				9C7E1DEB76232D8E66A3C1CA /* Copy Pods Resources */,
+				417FD53E82F170CAA2432795 /* [CP] Copy Pods Resources */,
+				B47CFE459C7EE5AD365F7346 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "OAuthSwift-AlamofireTVOS";
+			name = OAuthSwiftAlamofireTVOS;
 			productName = "OAuthSwift-AlamofireTVOS";
 			productReference = C41CFE001C4806AA00569B80 /* OAuthSwiftAlamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C41CFE0C1C4806C000569B80 /* OAuthSwift-AlamofireOSX */ = {
+		C41CFE0C1C4806C000569B80 /* OAuthSwiftAlamofireOSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C41CFE121C4806C000569B80 /* Build configuration list for PBXNativeTarget "OAuthSwift-AlamofireOSX" */;
+			buildConfigurationList = C41CFE121C4806C000569B80 /* Build configuration list for PBXNativeTarget "OAuthSwiftAlamofireOSX" */;
 			buildPhases = (
-				EC25C5C28C7D4E277EAF8953 /* Check Pods Manifest.lock */,
+				D7BD657F59538DE65D586D0E /* 📦 Check Pods Manifest.lock */,
+				C2EA7D3E79F569497E815E8B /* [CP] Check Pods Manifest.lock */,
 				C41CFE081C4806C000569B80 /* Sources */,
 				C41CFE091C4806C000569B80 /* Frameworks */,
 				C41CFE0A1C4806C000569B80 /* Headers */,
 				C41CFE0B1C4806C000569B80 /* Resources */,
-				37BB339389CB856A785662E0 /* Copy Pods Resources */,
+				0FD7CCA412E97F98457646BE /* [CP] Copy Pods Resources */,
+				C4E9375047E1D0096ACE4C9D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "OAuthSwift-AlamofireOSX";
+			name = OAuthSwiftAlamofireOSX;
 			productName = "OAuthSwift-AlamofireOSX";
 			productReference = C41CFE0D1C4806C000569B80 /* OAuthSwiftAlamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C4D7F93E1BB7585900A6D40E /* OAuthSwift-Alamofire */ = {
+		C4D7F93E1BB7585900A6D40E /* OAuthSwiftAlamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4D7F9471BB7585900A6D40E /* Build configuration list for PBXNativeTarget "OAuthSwift-Alamofire" */;
+			buildConfigurationList = C4D7F9471BB7585900A6D40E /* Build configuration list for PBXNativeTarget "OAuthSwiftAlamofire" */;
 			buildPhases = (
-				02AF90F7E1483DE793EE256B /* Check Pods Manifest.lock */,
+				CCF632F4393074DCCE21F3C1 /* 📦 Check Pods Manifest.lock */,
+				FED626B267F3E3650C490EB9 /* [CP] Check Pods Manifest.lock */,
 				C4D7F93A1BB7585900A6D40E /* Sources */,
 				C4D7F93B1BB7585900A6D40E /* Frameworks */,
 				C4D7F93C1BB7585900A6D40E /* Headers */,
 				C4D7F93D1BB7585900A6D40E /* Resources */,
-				EA1018D5F84B763EFFDE1264 /* Copy Pods Resources */,
+				E556978AEE5AA852605CFC8D /* [CP] Copy Pods Resources */,
+				3F046D54B20FEFBC3F366383 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "OAuthSwift-Alamofire";
+			name = OAuthSwiftAlamofire;
 			productName = "OAuthSwift-Alamofire";
 			productReference = C4D7F93F1BB7585900A6D40E /* OAuthSwiftAlamofire.framework */;
 			productType = "com.apple.product-type.framework";
@@ -249,13 +329,18 @@
 		C4D7F9361BB7585900A6D40E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = phimage;
 				TargetAttributes = {
+					C40C96DE1DA6498000197628 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
 					C41CFDFF1C4806AA00569B80 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = GGU39CDBL2;
+						LastSwiftMigration = 0800;
 					};
 					C41CFE0C1C4806C000569B80 = {
 						CreatedOnToolsVersion = 7.2;
@@ -278,14 +363,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4D7F93E1BB7585900A6D40E /* OAuthSwift-Alamofire */,
-				C41CFDFF1C4806AA00569B80 /* OAuthSwift-AlamofireTVOS */,
-				C41CFE0C1C4806C000569B80 /* OAuthSwift-AlamofireOSX */,
+				C4D7F93E1BB7585900A6D40E /* OAuthSwiftAlamofire */,
+				C41CFDFF1C4806AA00569B80 /* OAuthSwiftAlamofireTVOS */,
+				C41CFE0C1C4806C000569B80 /* OAuthSwiftAlamofireOSX */,
+				C40C96DE1DA6498000197628 /* OAuthSwiftAlamofireTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C40C96DD1DA6498000197628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C41CFDFE1C4806AA00569B80 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -310,14 +403,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02AF90F7E1483DE793EE256B /* Check Pods Manifest.lock */ = {
+		00BBBA94B2B46A332C7605C0 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,14 +418,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		37BB339389CB856A785662E0 /* Copy Pods Resources */ = {
+		0FD7CCA412E97F98457646BE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,44 +433,44 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwift-AlamofireOSX/Pods-OAuthSwift-AlamofireOSX-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9C7E1DEB76232D8E66A3C1CA /* Copy Pods Resources */ = {
+		22CDF7FB01D9413EF1DA417A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwift-AlamofireTVOS/Pods-OAuthSwift-AlamofireTVOS-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D1DEB4E6A1087B48422A5EC4 /* Check Pods Manifest.lock */ = {
+		2BDC3A795A39B0505E74C16B /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwiftAlamofireTests/Pods-OAuthSwiftAlamofireTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA1018D5F84B763EFFDE1264 /* Copy Pods Resources */ = {
+		3F046D54B20FEFBC3F366383 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,14 +478,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwift-Alamofire/Pods-OAuthSwift-Alamofire-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EC25C5C28C7D4E277EAF8953 /* Check Pods Manifest.lock */ = {
+		417FD53E82F170CAA2432795 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwift-AlamofireTVOS/Pods-OAuthSwift-AlamofireTVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DB4A7C7957EF6294D8C395F /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,16 +508,143 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		7E09478E77A579E796B5983B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwiftAlamofireTests/Pods-OAuthSwiftAlamofireTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B47CFE459C7EE5AD365F7346 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwift-AlamofireTVOS/Pods-OAuthSwift-AlamofireTVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2EA7D3E79F569497E815E8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C4E9375047E1D0096ACE4C9D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwift-AlamofireOSX/Pods-OAuthSwift-AlamofireOSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF632F4393074DCCE21F3C1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D7BD657F59538DE65D586D0E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E556978AEE5AA852605CFC8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OAuthSwift-Alamofire/Pods-OAuthSwift-Alamofire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FED626B267F3E3650C490EB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C40C96DB1DA6498000197628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40C96E21DA6498000197628 /* OAuthSwiftAlamofireTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C41CFDFB1C4806AA00569B80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41CFE161C4806CB00569B80 /* Method.swift in Sources */,
-				C41CFE151C4806CB00569B80 /* Header.swift in Sources */,
-				C4EA64D81C480AEA00E299C5 /* Manager+OAuthSwift.swift in Sources */,
+				C41CFE161C4806CB00569B80 /* HTTPMethod.swift in Sources */,
+				C48204641DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,9 +652,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C41CFE181C4806CB00569B80 /* Method.swift in Sources */,
-				C41CFE171C4806CB00569B80 /* Header.swift in Sources */,
-				C4EA64D91C480AEA00E299C5 /* Manager+OAuthSwift.swift in Sources */,
+				C41CFE181C4806CB00569B80 /* HTTPMethod.swift in Sources */,
+				C48204651DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,19 +661,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C400DA851C3E08FF0002A995 /* Header.swift in Sources */,
-				C400DA831C3E033F0002A995 /* Method.swift in Sources */,
-				C4EA64D71C480AEA00E299C5 /* Manager+OAuthSwift.swift in Sources */,
+				C400DA831C3E033F0002A995 /* HTTPMethod.swift in Sources */,
+				C48204631DA5348F00A69572 /* OAuthSwiftRequestAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C40C96E61DA6498000197628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C41CFE0C1C4806C000569B80 /* OAuthSwiftAlamofireOSX */;
+			targetProxy = C40C96E51DA6498000197628 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C40C96E81DA6498000197628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3E57247DBE681B087D9D93 /* Pods-OAuthSwiftAlamofireTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OAuthSwiftAlamofireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.OAuthSwiftAlamofireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C40C96E91DA6498000197628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFF85E9F7199417819DA331D /* Pods-OAuthSwiftAlamofireTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OAuthSwiftAlamofireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.OAuthSwiftAlamofireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		C41CFE061C4806AA00569B80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F13B9DCDF2E0D853B0D50C9B /* Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig */;
+			baseConfigurationReference = 8B5378333E0446532BFBC0CC /* Pods-OAuthSwift-AlamofireTVOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -451,6 +735,7 @@
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
@@ -458,8 +743,10 @@
 		};
 		C41CFE071C4806AA00569B80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FE7E77AB9777674F495DDD8 /* Pods-OAuthSwift-AlamofireTVOS.release.xcconfig */;
+			baseConfigurationReference = A00C118604D4C8A80FE1D215 /* Pods-OAuthSwift-AlamofireTVOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -471,6 +758,7 @@
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
@@ -478,9 +766,10 @@
 		};
 		C41CFE131C4806C000569B80 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D8A6AB40A34CA99252BA454 /* Pods-OAuthSwift-AlamofireOSX.debug.xcconfig */;
+			baseConfigurationReference = 6C4B4C0B17BF04E9D930B28E /* Pods-OAuthSwift-AlamofireOSX.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -495,14 +784,16 @@
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C41CFE141C4806C000569B80 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0061E6BB8E842DE66FC598C5 /* Pods-OAuthSwift-AlamofireOSX.release.xcconfig */;
+			baseConfigurationReference = 5DE87F4E3CA92C39F0CCB9F1 /* Pods-OAuthSwift-AlamofireOSX.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -517,6 +808,7 @@
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -533,8 +825,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -581,8 +875,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -602,6 +898,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -611,9 +908,11 @@
 		};
 		C4D7F9481BB7585900A6D40E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D790BF109AAA326F4040706B /* Pods-OAuthSwift-Alamofire.debug.xcconfig */;
+			baseConfigurationReference = 6EBB44C27892E32399C60CB1 /* Pods-OAuthSwift-Alamofire.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -625,15 +924,18 @@
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C4D7F9491BB7585900A6D40E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0537178882480248D87C2B9C /* Pods-OAuthSwift-Alamofire.release.xcconfig */;
+			baseConfigurationReference = 650859DE72500FCC7357BE48 /* Pods-OAuthSwift-Alamofire.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -644,6 +946,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tv.phimage.OAuthSwift-Alamofire";
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -651,7 +954,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C41CFE051C4806AA00569B80 /* Build configuration list for PBXNativeTarget "OAuthSwift-AlamofireTVOS" */ = {
+		C40C96E71DA6498000197628 /* Build configuration list for PBXNativeTarget "OAuthSwiftAlamofireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40C96E81DA6498000197628 /* Debug */,
+				C40C96E91DA6498000197628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C41CFE051C4806AA00569B80 /* Build configuration list for PBXNativeTarget "OAuthSwiftAlamofireTVOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C41CFE061C4806AA00569B80 /* Debug */,
@@ -660,7 +972,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C41CFE121C4806C000569B80 /* Build configuration list for PBXNativeTarget "OAuthSwift-AlamofireOSX" */ = {
+		C41CFE121C4806C000569B80 /* Build configuration list for PBXNativeTarget "OAuthSwiftAlamofireOSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C41CFE131C4806C000569B80 /* Debug */,
@@ -678,7 +990,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4D7F9471BB7585900A6D40E /* Build configuration list for PBXNativeTarget "OAuthSwift-Alamofire" */ = {
+		C4D7F9471BB7585900A6D40E /* Build configuration list for PBXNativeTarget "OAuthSwiftAlamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4D7F9481BB7585900A6D40E /* Debug */,

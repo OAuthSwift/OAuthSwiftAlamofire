@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C4D7F93E1BB7585900A6D40E"
                BuildableName = "OAuthSwiftAlamofire.framework"
-               BlueprintName = "OAuthSwift-Alamofire"
+               BlueprintName = "OAuthSwiftAlamofire"
                ReferencedContainer = "container:OAuthSwift-Alamofire.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4D7F93E1BB7585900A6D40E"
             BuildableName = "OAuthSwiftAlamofire.framework"
-            BlueprintName = "OAuthSwift-Alamofire"
+            BlueprintName = "OAuthSwiftAlamofire"
             ReferencedContainer = "container:OAuthSwift-Alamofire.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C4D7F93E1BB7585900A6D40E"
             BuildableName = "OAuthSwiftAlamofire.framework"
-            BlueprintName = "OAuthSwift-Alamofire"
+            BlueprintName = "OAuthSwiftAlamofire"
             ReferencedContainer = "container:OAuthSwift-Alamofire.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

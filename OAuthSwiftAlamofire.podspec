@@ -1,27 +1,27 @@
 Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.name = 'OAuthSwift-Alamofire'
-  s.version = '0.0.2'
+  s.name = 'OAuthSwiftAlamofire'
+  s.version = '0.1.0'
   s.license = 'MIT'
-  s.summary = 'OAuthSwift and Alamofire'
+  s.summary = 'Sign Alamofire request with OAuthSwift'
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.license      = "MIT"
 
-  s.homepage = 'https://github.com/OAuthSwift/OAuthSwift-Alamofire'
+  s.homepage = 'https://github.com/OAuthSwift/OAuthSwiftAlamofire'
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.author             = { "phimage" => "eric.marchand.n7@gmail.com" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.10'
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.11'
   s.tvos.deployment_target = '9.0'
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source = { :git => 'https://github.com/OAuthSwift/OAuthSwift-Alamofire.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/OAuthSwift/OAuthSwiftAlamofire.git', :tag => s.version }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source_files = 'OAuthSwift-Alamofire/*.swift'
+  s.source_files = 'Sources/*.swift'
 
   s.dependency 'OAuthSwift'
   s.dependency 'Alamofire'
