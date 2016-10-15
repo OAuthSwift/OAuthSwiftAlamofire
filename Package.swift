@@ -24,7 +24,7 @@ import PackageDescription
 let package = Package(
     name: "OAuthSwiftAlamofire",
     dependencies: [
-        .Package(url: "https://github.com/phimage/OAuthSwift.git", majorVersion: 1),
+        .Package(url: "https://github.com/OAuthSwift/OAuthSwift.git", majorVersion: 1),
         .Package(url: "https://github.com/Alamofire/Alamofire.git", majorVersion: 4),
     ]
 )
