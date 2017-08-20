@@ -17,6 +17,7 @@ This framework provide a `RequestAdapter` to set into alamofire `SessionManager`
 let sessionManager = SessionManager.default
 sessionManager.adapter = oauthSwift.requestAdapter // or OAuthSwiftRequestAdapter(oauth)
 ```
+
 Then you can make you request as usual
 ```swift
 sessionManager.request("http://oauthbin.com/v1/echo")
@@ -24,6 +25,13 @@ sessionManager.request("http://oauthbin.com/v1/echo")
 
 :warning: you must have call `authorize` function on your `OAuthSwift` or nothing will be signed.
 
+### Refresh token
+
+The OAuth2 adapter will also automatically refresh the access token, using the Alamofire `RequestRetrier` mecanism.
+```swift
+let sessionManager = SessionManager.default
+sessionManager.retrier = oauthSwift.requestAdapter
+```
 
 ## Installation
 
