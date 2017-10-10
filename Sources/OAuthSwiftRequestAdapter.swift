@@ -76,7 +76,7 @@ open class OAuthSwift2RequestAdapter: OAuthSwiftRequestAdapter, RequestRetrier {
         
         
         oauth2Swift.renewAccessToken(
-            withRefreshToken: "",
+            withRefreshToken: oauth2Swift.client.credential.oauthRefreshToken,
             success: { [weak self] (credential, response, parameters) in
                 guard let strongSelf = self else { return }
                 completion(true)
