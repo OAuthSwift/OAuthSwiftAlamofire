@@ -105,20 +105,20 @@
 		C40C96DA1DA6495600197628 /* Xcode */ = {
 			isa = PBXGroup;
 			children = (
-				C4D7F9411BB7585900A6D40E /* OAuthSwift-Alamofire */,
-				C41CFE011C4806AA00569B80 /* OAuthSwift-AlamofireTVOS */,
-				C41CFE0E1C4806C000569B80 /* OAuthSwift-AlamofireOSX */,
+				C4D7F9411BB7585900A6D40E /* iOS */,
+				C41CFE011C4806AA00569B80 /* tvOS */,
+				C41CFE0E1C4806C000569B80 /* macOS */,
 			);
-			name = Xcode;
+			path = Xcode;
 			sourceTree = "<group>";
 		};
-		C40C96E01DA6498000197628 /* OAuthSwiftAlamofireTests */ = {
+		C40C96E01DA6498000197628 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				C40C96E11DA6498000197628 /* OAuthSwiftAlamofireTests.swift */,
 				C40C96E31DA6498000197628 /* Info.plist */,
 			);
-			path = OAuthSwiftAlamofireTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		C40C96EB1DA6677400197628 /* Frameworks */ = {
@@ -158,22 +158,22 @@
 			name = Mac;
 			sourceTree = "<group>";
 		};
-		C41CFE011C4806AA00569B80 /* OAuthSwift-AlamofireTVOS */ = {
+		C41CFE011C4806AA00569B80 /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
 				C41CFE021C4806AA00569B80 /* OAuthSwift-AlamofireTVOS.h */,
 				C41CFE041C4806AA00569B80 /* Info.plist */,
 			);
-			path = "OAuthSwift-AlamofireTVOS";
+			path = tvOS;
 			sourceTree = "<group>";
 		};
-		C41CFE0E1C4806C000569B80 /* OAuthSwift-AlamofireOSX */ = {
+		C41CFE0E1C4806C000569B80 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
 				C41CFE0F1C4806C000569B80 /* OAuthSwift-AlamofireOSX.h */,
 				C41CFE111C4806C000569B80 /* Info.plist */,
 			);
-			path = "OAuthSwift-AlamofireOSX";
+			path = macOS;
 			sourceTree = "<group>";
 		};
 		C48204611DA532E300A69572 /* Sources */ = {
@@ -191,7 +191,7 @@
 				C48204611DA532E300A69572 /* Sources */,
 				C40C96EB1DA6677400197628 /* Frameworks */,
 				C40C96DA1DA6495600197628 /* Xcode */,
-				C40C96E01DA6498000197628 /* OAuthSwiftAlamofireTests */,
+				C40C96E01DA6498000197628 /* Tests */,
 				C4D7F9401BB7585900A6D40E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -207,13 +207,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C4D7F9411BB7585900A6D40E /* OAuthSwift-Alamofire */ = {
+		C4D7F9411BB7585900A6D40E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				C4D7F9421BB7585900A6D40E /* OAuthSwift-Alamofire.h */,
 				C4D7F9441BB7585900A6D40E /* Info.plist */,
 			);
-			path = "OAuthSwift-Alamofire";
+			path = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,11 +325,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = phimage;
 				TargetAttributes = {
 					C40C96DE1DA6498000197628 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 					C41CFDFF1C4806AA00569B80 = {
@@ -339,6 +340,7 @@
 					};
 					C41CFE0C1C4806C000569B80 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0940;
 					};
 					C4D7F93E1BB7585900A6D40E = {
 						CreatedOnToolsVersion = 7.0;
@@ -457,14 +459,15 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = OAuthSwiftAlamofireTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.OAuthSwiftAlamofireTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -481,13 +484,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = OAuthSwiftAlamofireTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = me.phimage.OAuthSwiftAlamofireTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -504,14 +508,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "OAuthSwift-AlamofireTVOS/Info.plist";
+				INFOPLIST_FILE = Xcode/tvOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.phimage.OAuthSwift-AlamofireTVOS";
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
@@ -530,14 +534,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = "OAuthSwift-AlamofireTVOS/Info.plist";
+				INFOPLIST_FILE = Xcode/tvOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.phimage.OAuthSwift-AlamofireTVOS";
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
@@ -558,7 +562,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "OAuthSwift-AlamofireOSX/Info.plist";
+				INFOPLIST_FILE = Xcode/macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -566,7 +570,8 @@
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -585,7 +590,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = "OAuthSwift-AlamofireOSX/Info.plist";
+				INFOPLIST_FILE = Xcode/macOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
@@ -593,7 +598,8 @@
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -605,14 +611,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -655,14 +669,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -705,14 +727,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "OAuthSwift-Alamofire/Info.plist";
+				INFOPLIST_FILE = Xcode/iOs/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tv.phimage.OAuthSwift-Alamofire";
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -731,13 +753,13 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "OAuthSwift-Alamofire/Info.plist";
+				INFOPLIST_FILE = Xcode/iOs/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tv.phimage.OAuthSwift-Alamofire";
 				PRODUCT_NAME = OAuthSwiftAlamofire;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
