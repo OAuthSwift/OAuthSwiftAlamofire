@@ -42,14 +42,14 @@ class OAuthSwiftAlamofireTests: XCTestCase {
         let expectation = self.expectation(description: "auth should succeed")
         
         oauth.authorize(
-            withCallbackURL: URL(string:callbackURL)!,
-            success: { credential, response, parameters in
+        withCallbackURL: URL(string:callbackURL)!) { result in
+            switch result {
+            case .success:
                 expectation.fulfill()
-            },
-            failure:  { e in
-                XCTFail("The failure handler should not be called. \(e)")
+            case .failure (let error):
+                XCTFail("The failure handler should not be called. \(error)")
             }
-        )
+        }
         
         waitForExpectations(timeout: 20, handler: nil)
         
@@ -65,13 +65,10 @@ class OAuthSwiftAlamofireTests: XCTestCase {
         }
         
         let expectation = self.expectation(description: "auth should succeed")
-        let sessionManager = SessionManager.default
-        let adapter = oauth.requestAdapter
-        //adapter.paramsLocation = .requestURIQuery
-        sessionManager.adapter = adapter
-        
+        let interceptor = oauth.requestInterceptor
+        let sessionManager = Session(interceptor: interceptor)
         let param = "method=foo&bar=baz"
-       
+        // TODO http://oauthbin.com no more exist, test could not be done
         sessionManager.request("http://oauthbin.com/v1/echo?\(param)", method: .get).validate().responseString { response in
             switch response.result {
             case .success(let value):
@@ -106,7 +103,6 @@ class TestOAuthSwiftURLHandler: NSObject, OAuthSwiftURLHandlerType {
         self.version = version
     }
     @objc func handle(_ url: URL) {
-        
         switch version {
         case .oauth1:
             handleV1(url)

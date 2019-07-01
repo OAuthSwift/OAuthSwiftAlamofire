@@ -12,26 +12,26 @@
 Utility methods to use [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) to sign [Alamofire](https://github.com/Alamofire/Alamofire) request.
 
 ## How to use
-This framework provide a `RequestAdapter` to set into alamofire `SessionManager`
+This framework provide a `RequestInterceptor` to set into alamofire `Session`
 ```swift
-let sessionManager = SessionManager.default
-sessionManager.adapter = oauthSwift.requestAdapter // or OAuthSwiftRequestAdapter(oauth)
+let interceptor = oauthswift.requestInterceptor
+let session = Session(interceptor: interceptor)
 ```
-
 Then you can make you request as usual
 ```swift
-sessionManager.request("http://oauthbin.com/v1/echo")
+session.request("http://oauthbin.com/v1/echo")
+```
+
+or pass the `interceptor` as argument of `request` function
+```swift
+session.request("http://oauthbin.com/v1/echo", interceptor: interceptor)
 ```
 
 :warning: you must have call `authorize` function on your `OAuthSwift` or nothing will be signed.
 
 ### Refresh token
 
-The OAuth2 adapter will also automatically refresh the access token, using the Alamofire `RequestRetrier` mecanism.
-```swift
-let sessionManager = SessionManager.default
-sessionManager.retrier = oauthSwift.requestAdapter
-```
+The OAuth2 interceptor will also automatically refresh the access token, using the Alamofire `RequestRetrier` mecanism.
 
 ## Installation
 
