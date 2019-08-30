@@ -16,6 +16,8 @@ open class OAuthSwiftRequestInterceptor: RequestInterceptor {
     fileprivate let oauthSwift: OAuthSwift
     public var paramsLocation: OAuthSwiftHTTPRequest.ParamsLocation = .authorizationHeader
     public var dataEncoding: String.Encoding = .utf8
+    public var retryLimit = 1
+    
     fileprivate var requestsToRetry: [(RetryResult) -> Void] = []
 
     public init(_ oauthSwift: OAuthSwift) {
@@ -87,7 +89,7 @@ open class OAuthSwift2RequestInterceptor: OAuthSwiftRequestInterceptor {
 
     /// Determine if must retry or not ie. refresh token
     open func mustRetry(request: Request, dueTo error: Error) -> Bool {
-        if let response = request.task?.response as? HTTPURLResponse, response.statusCode == 401 {
+        if let response = request.task?.response as? HTTPURLResponse, response.statusCode == 401 && request.retryCount < retryLimit {
             return true
         }
         return false
