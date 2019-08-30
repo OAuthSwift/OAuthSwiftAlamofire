@@ -16,6 +16,7 @@ open class OAuthSwiftRequestInterceptor: RequestInterceptor {
     fileprivate let oauthSwift: OAuthSwift
     public var paramsLocation: OAuthSwiftHTTPRequest.ParamsLocation = .authorizationHeader
     public var dataEncoding: String.Encoding = .utf8
+    fileprivate var requestsToRetry: [(RetryResult) -> Void] = []
 
     public init(_ oauthSwift: OAuthSwift) {
         self.oauthSwift = oauthSwift
@@ -49,25 +50,34 @@ open class OAuthSwift2RequestInterceptor: OAuthSwiftRequestInterceptor {
 
     fileprivate var oauth2Swift: OAuth2Swift { return oauthSwift as! OAuth2Swift } // swiftlint:disable:this force_cast
 
-    private let lock = NSLock() // XXX remove the lock? (due to new implementation of alamofire)
+    private let lock = NSLock() // lock required to manage requestToRetry access
     private var isRefreshing = false
 
     open override func retry(_ request: Request, for session: Session, dueTo error: Error, completion: @escaping (RetryResult) -> Void) {
         lock.lock() ; defer { lock.unlock() }
 
         if mustRetry(request: request, dueTo: error) {
+            // queue requests so they can all be retried when token refresh is done
+            requestsToRetry.append(completion)
+            
             if !isRefreshing {
                 refreshTokens { [weak self] result in
                     guard let strongSelf = self else { return }
 
                     strongSelf.lock.lock() ; defer { strongSelf.lock.unlock() }
 
+                    var shouldRetry: RetryResult
+                    
                     switch result {
                     case .success:
-                        completion(.retry)
+                        shouldRetry = .retry
                     case .failure(let error):
-                        completion(.doNotRetryWithError(error))
+                        shouldRetry = .doNotRetryWithError(error)
                     }
+                    
+                    // process any previously queued requests
+                    strongSelf.requestsToRetry.forEach { $0(shouldRetry) }
+                    strongSelf.requestsToRetry.removeAll()
                 }
             }
         } else {
@@ -89,16 +99,13 @@ open class OAuthSwift2RequestInterceptor: OAuthSwiftRequestInterceptor {
         isRefreshing = true
 
         oauth2Swift.renewAccessToken(withRefreshToken: oauth2Swift.client.credential.oauthRefreshToken) { [weak self] result in
-            switch result {
-            case .success:
-                guard let strongSelf = self else { return }
-                completion(.success(()))
-                strongSelf.isRefreshing = false
-            case .failure(let error):
-                guard let strongSelf = self else { return }
-                completion(.failure(error))
-                strongSelf.isRefreshing = false
-            }
+            guard let strongSelf = self else { return }
+            
+            // map success result from TokenSuccess to Void, and failure from OAuthSwiftError to Error
+            let refreshResult = result.flatMap { _ in .success(()) }.flatMapError { .failure($0 as Error) }
+            completion(refreshResult)
+            
+            strongSelf.isRefreshing = false
         }
     }
 

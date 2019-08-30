@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import OAuthSwiftAlamofire
+@testable import OAuthSwiftAlamofire
 import OAuthSwift
 import Alamofire
 
@@ -79,6 +79,35 @@ class OAuthSwiftAlamofireTests: XCTestCase {
             }
         }
         waitForExpectations(timeout: 20, handler: nil)
+    }
+    
+    // Note: oauthbin.com doesn't seem to exist anymore (domain name expire) and couldn't find another easily usable test server
+    // This test case needs to be updated if and when oauthbin.com comes back.
+    func testMultipleRequests() {
+        let exp1 = self.expectation(description: "auth should retry 1st request")
+        let exp2 = self.expectation(description: "auth should retry 2nd request")
+        
+        let oauth2 = OAuth2Swift(
+            consumerKey: "tbd",
+            consumerSecret: "tbd",
+            authorizeUrl: "tbd",
+            accessTokenUrl: "tbd",
+            responseType: "code")
+        
+        let interceptor = oauth2.requestInterceptor
+        let session = Session(interceptor: interceptor)
+        
+        session.request("tbd", method: .get).validate().response { response in
+            XCTAssert(response.response?.statusCode == 200, "Failed request 1 auth")
+            exp1.fulfill()
+        }
+        
+        session.request("tbd").validate().response { response in
+            XCTAssert(response.response?.statusCode == 200, "Failed request 2 auth")
+            exp2.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0, handler: nil)
     }
 
 }

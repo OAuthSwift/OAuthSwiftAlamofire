@@ -75,6 +75,8 @@
 		C4D7F93F1BB7585900A6D40E /* OAuthSwiftAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OAuthSwiftAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D7F9421BB7585900A6D40E /* OAuthSwift-Alamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAuthSwift-Alamofire.h"; sourceTree = "<group>"; };
 		C4D7F9441BB7585900A6D40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9B7D1023197A3D0073E77E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		FF9B7D1223197A4E0073E77E /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,8 @@
 		C4D7F9351BB7585900A6D40E = {
 			isa = PBXGroup;
 			children = (
+				FF9B7D1023197A3D0073E77E /* Cartfile */,
+				FF9B7D1223197A4E0073E77E /* Cartfile.resolved */,
 				C48204611DA532E300A69572 /* Sources */,
 				C40C96EB1DA6677400197628 /* Frameworks */,
 				C40C96DA1DA6495600197628 /* Xcode */,
