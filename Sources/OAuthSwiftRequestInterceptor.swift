@@ -24,7 +24,7 @@ open class OAuthSwiftRequestInterceptor: RequestInterceptor {
         self.oauthSwift = oauthSwift
     }
     
-    open func adapt(_ urlRequest: URLRequest, for session: Session, completion: @escaping (AFResult<URLRequest>) -> Void) {
+    open func adapt(_ urlRequest: URLRequest, for session: Session, completion: @escaping (Result<URLRequest, Error>) -> Void) {
         var config = OAuthSwiftHTTPRequest.Config(
             urlRequest: urlRequest,
             paramsLocation: paramsLocation,
@@ -104,7 +104,7 @@ open class OAuthSwift2RequestInterceptor: OAuthSwiftRequestInterceptor {
             guard let strongSelf = self else { return }
             
             // map success result from TokenSuccess to Void, and failure from OAuthSwiftError to Error
-            let refreshResult = result.map { _ in () }.mapError { .$0 as Error }
+            let refreshResult = result.map { _ in () }.mapError { $0 as Error }
             completion(refreshResult)
             
             strongSelf.isRefreshing = false
@@ -114,7 +114,6 @@ open class OAuthSwift2RequestInterceptor: OAuthSwiftRequestInterceptor {
 }
 
 extension OAuth1Swift {
-
     open var requestInterceptor: OAuthSwiftRequestInterceptor {
         return OAuthSwiftRequestInterceptor(self)
     }

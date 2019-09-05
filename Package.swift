@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 // Package.swift
 /*
  The MIT License (MIT)
@@ -24,15 +24,20 @@ import PackageDescription
 
 let package = Package(
     name: "OAuthSwiftAlamofire",
+    platforms: [.macOS(.v10_12),
+                .iOS(.v10),
+                .tvOS(.v10),
+                .watchOS(.v3)],
     products: [
         .library(name: "OAuthSwiftAlamofire", targets: ["OAuthSwiftAlamofire"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/OAuthSwift/OAuthSwift.git", from: "2.1.0"),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", from:  "5.0.0-rc.1"),
+        .package(url: "https://github.com/OAuthSwift/OAuthSwift.git", .branch("2.1.0")),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .branch("5.0.0-rc.1")),
     ],
     targets: [
         .target(name: "OAuthSwiftAlamofire", dependencies: ["OAuthSwift", "Alamofire"], path: "Sources"),
         .testTarget(name: "OAuthSwiftAlamofireTests", dependencies: ["OAuthSwiftAlamofire"], path: "Tests"),
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )

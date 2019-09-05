@@ -21,7 +21,7 @@ public extension Alamofire.HTTPMethod {
 public extension OAuthSwiftHTTPRequest.Method {
 
     var alamofire: Alamofire.HTTPMethod {
-        return Alamofire.HTTPMethod(rawValue: self.rawValue)!
+        return Alamofire.HTTPMethod(rawValue: self.rawValue)
     }
 
 }
