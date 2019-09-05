@@ -17,9 +17,9 @@ class OAuthSwiftAlamofireTests: XCTestCase {
     let oauth = OAuth1Swift(
         consumerKey: "key",
         consumerSecret: "secret",
-        requestTokenUrl: "http://oauthbin.com/v1/request-token",
+        requestTokenUrl: "http://term.ie/oauth/example/request_token.php",
         authorizeUrl: "automatic://host/autorize",
-        accessTokenUrl: "http://oauthbin.com/v1/access-token"
+        accessTokenUrl: "http://term.ie/oauth/example/access_token.php"
     )
     
     override func setUp() {
@@ -69,7 +69,7 @@ class OAuthSwiftAlamofireTests: XCTestCase {
         let sessionManager = Session(interceptor: interceptor)
         let param = "method=foo&bar=baz"
         // TODO http://oauthbin.com no more exist, test could not be done
-        sessionManager.request("http://oauthbin.com/v1/echo?\(param)", method: .get).validate().responseString { response in
+        sessionManager.request("http://term.ie/oauth/example/echo_api.php?\(param)", method: .get).validate().responseString { response in
             switch response.result {
             case .success(let value):
                 XCTAssertEqual(param, value)
