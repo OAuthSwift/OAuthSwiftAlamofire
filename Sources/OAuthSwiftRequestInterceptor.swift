@@ -104,7 +104,7 @@ open class OAuthSwift2RequestInterceptor: OAuthSwiftRequestInterceptor {
             guard let strongSelf = self else { return }
             
             // map success result from TokenSuccess to Void, and failure from OAuthSwiftError to Error
-            let refreshResult = result.flatMap { _ in .success(()) }.flatMapError { .failure($0 as Error) }
+            let refreshResult = result.map { _ in () }.mapError { .$0 as Error }
             completion(refreshResult)
             
             strongSelf.isRefreshing = false
