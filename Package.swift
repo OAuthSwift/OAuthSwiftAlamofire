@@ -33,7 +33,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/OAuthSwift/OAuthSwift.git", .branch("2.1.0")),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .branch("5.0.0-rc.1")),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .branch("5.0.0")),
     ],
     targets: [
         .target(name: "OAuthSwiftAlamofire", dependencies: ["OAuthSwift", "Alamofire"], path: "Sources"),
