@@ -32,8 +32,8 @@ let package = Package(
         .library(name: "OAuthSwiftAlamofire", targets: ["OAuthSwiftAlamofire"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/OAuthSwift/OAuthSwift.git", .branch("2.1.0")),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .branch("5.0.0")),
+        .package(url: "https://github.com/OAuthSwift/OAuthSwift.git", .upToNextMajor(from: "2.1.0")),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.0.0")),
     ],
     targets: [
         .target(name: "OAuthSwiftAlamofire", dependencies: ["OAuthSwift", "Alamofire"], path: "Sources"),
