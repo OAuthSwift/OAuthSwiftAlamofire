@@ -31,7 +31,7 @@ session.request("http://oauthbin.com/v1/echo", interceptor: interceptor)
 
 ### Refresh token
 
-The OAuth2 interceptor will also automatically refresh the access token, using the Alamofire `RequestRetrier` mecanism.
+The OAuth2 interceptor will also automatically refresh the access token, using the Alamofire `RequestRetrier` mechanism.
 
 ## Installation
 
